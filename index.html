@@ -1,196 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <title>Jesús Olarte — Desarrollador Fullstack Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-contenedor">
-      <div class="header-div1">
-        <h1>Jesus David Olarte Landinez</h1>
-        <p class="subtitulo">Desarrollador Backend Junior</p>
-        <p class="description">
-          Desarrollador apasionado por la tecnología backend con 7+ meses de experiencia.
-          Experiencia en Bases de datos, Desarrollo web, Backend. Actualmente enfocado en la ruta Java.
-        </p>
+  <!-- ==================== NAV TIPO VS CODE ==================== -->
+  <nav class="topbar">
+    <div class="topbar-left">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="topbar-title">jesus@portafolio: ~/dev</span>
+    </div>
+    <ul class="topbar-nav">
+      <li><a href="#sobre-mi"><span class="nav-symbol">~/</span>about</a></li>
+      <li><a href="#habilidades"><span class="nav-symbol">~/</span>skills</a></li>
+      <li><a href="#experiencia"><span class="nav-symbol">~/</span>experience</a></li>
+      <li><a href="#educacion"><span class="nav-symbol">~/</span>education</a></li>
+      <li><a href="#contacto"><span class="nav-symbol">~/</span>contact</a></li>
+    </ul>
+  </nav>
 
-        <div class="header-botones">
-          <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-          <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+  <!-- ==================== HERO TERMINAL ==================== -->
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="container hero-container">
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash — jesus@dev — 80x24</span>
+        </div>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">jesus@dev</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cmd">whoami</span></p>
+          <p class="line out">Jesús David Olarte Landinez</p>
+
+          <p class="line"><span class="prompt">jesus@dev</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cmd">cat role.txt</span></p>
+          <p class="line out highlight">Desarrollador Fullstack Junior</p>
+
+          <p class="line"><span class="prompt">jesus@dev</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cmd">echo $STACK</span></p>
+          <p class="line out"><span class="kw">React</span> · <span class="kw">TypeScript</span> · <span class="kw">Java</span> · <span class="kw">Spring Boot</span> · <span class="kw">MySQL</span> · <span class="kw">Supabase</span></p>
+
+          <p class="line"><span class="prompt">jesus@dev</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cmd">./status.sh</span></p>
+          <p class="line out"><span class="ok">●</span> Disponible para nuevas oportunidades</p>
+
+          <p class="line"><span class="prompt">jesus@dev</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="typed"></span><span class="cursor">▌</span></p>
         </div>
       </div>
 
-      <div class="header-div2">
-        <img src="img/fotoperfil.png">
+      <div class="hero-side">
+        <div class="avatar-frame">
+          <img src="img/fotoperfil.png" alt="Jesús David Olarte Landinez">
+          <span class="avatar-tag">&lt;dev /&gt;</span>
+        </div>
+        <div class="hero-buttons">
+          <a href="#experiencia" class="btn btn-primary">
+            <span class="btn-icon">▶</span> Ver proyectos
+          </a>
+          <a href="#contacto" class="btn btn-secondary">
+            <span class="btn-icon">✉</span> Contactarme
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <nav>
+  <!-- ==================== SOBRE MI ==================== -->
+  <section id="sobre-mi" class="section">
     <div class="container">
-      <ul>
-        <li><a href="#sobre-mi">Sobre Mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+      <h2 class="section-titulo">
+        <span class="section-num">01.</span> Sobre mí
+        <span class="section-line"></span>
+      </h2>
 
-  <section id="sobre-mi">
-      <div class="container">
-          <h2 class="section-titulo">Sobre Mí</h2>
-          <div class="sobremi-content">
-              <div class="sobremi-text">
-                  <p>
-                      Desarrollador backend junior con una gran pasión por la tecnología y el aprendizaje continuo. 
-                      Con 7 meses y medio de experiencia, he trabajado en proyectos que incluyen sistemas bancarios 
-                      y redes sociales, utilizando tecnologías como Python, JavaScript, MySQL y Java.
-                  </p>
-                  <p>
-                      Actualmente estoy enfocado en la ruta Java para profundizar mis conocimientos en desarrollo backend. 
-                      Manejo GitHub para el control de versiones. 
-                      Mi objetivo es convertirme en un desarrollador backend sólido siguiento patrones de diseño y estructura escalable con buenas practicas.
-                  </p>
-              </div>
-              <div class="video-presentacion">
-                <video src="video/backtofriends.mp4" controls></video>
-              </div>
+      <div class="about-grid">
+        <div class="code-block">
+          <div class="code-header">
+            <span class="file-icon">{}</span>
+            <span class="file-name">profile.json</span>
           </div>
+          <pre class="code-body"><code><span class="c-punct">{</span>
+  <span class="c-key">"nombre"</span><span class="c-punct">:</span> <span class="c-str">"Jesús David Olarte Landinez"</span><span class="c-punct">,</span>
+  <span class="c-key">"rol"</span><span class="c-punct">:</span> <span class="c-str">"Fullstack Junior"</span><span class="c-punct">,</span>
+  <span class="c-key">"ubicacion"</span><span class="c-punct">:</span> <span class="c-str">"Floridablanca, Colombia"</span><span class="c-punct">,</span>
+  <span class="c-key">"enfoque"</span><span class="c-punct">:</span> <span class="c-punct">[</span>
+    <span class="c-str">"Aplicaciones web completas"</span><span class="c-punct">,</span>
+    <span class="c-str">"De la UI a la base de datos"</span><span class="c-punct">,</span>
+    <span class="c-str">"Mejora continua"</span>
+  <span class="c-punct">]</span><span class="c-punct">,</span>
+  <span class="c-key">"soft_skills"</span><span class="c-punct">:</span> <span class="c-str">"IA aplicada + creatividad"</span><span class="c-punct">,</span>
+  <span class="c-key">"abierto_a_trabajar"</span><span class="c-punct">:</span> <span class="c-bool">true</span>
+<span class="c-punct">}</span></code></pre>
+        </div>
+
+        <div class="about-text">
+          <p>
+            Soy <strong>Desarrollador Fullstack Junior</strong> con experiencia práctica
+            construyendo aplicaciones web completas, desde la interfaz hasta la base de datos.
+          </p>
+          <p>
+            Capaz de llevar proyectos de cero a producción de forma autónoma, integrando
+            tecnologías modernas. Orientado a la <strong>mejora continua</strong>, con uso
+            aplicado de inteligencia artificial y habilidad para resolver problemas de forma
+            creativa bajo presión.
+          </p>
+
+          <h3 class="mini-title">// Competencias</h3>
+          <div class="soft-skills">
+            <span class="soft-tag">Liderazgo</span>
+            <span class="soft-tag">Creatividad</span>
+            <span class="soft-tag">Compañerismo</span>
+            <span class="soft-tag">Disciplina</span>
+            <span class="soft-tag">Paciencia</span>
+            <span class="soft-tag">Proactividad</span>
+            <span class="soft-tag">Comunicación</span>
+            <span class="soft-tag">Adaptabilidad</span>
+          </div>
+
+          <h3 class="mini-title">// Idiomas</h3>
+          <div class="soft-skills">
+            <span class="soft-tag">Español <em>— Nativo</em></span>
+            <span class="soft-tag">Inglés <em>— A2.3</em></span>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
-  <section id="habilidades">
-        <div class="container">
-            <h2 class="section-titulo">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>👨🏻‍💻 Backend</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Spring Boot</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>🌐 Frontend</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>🗄️ Bases de Datos</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>🛠️ Herramientas</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Notion</span>
-                    </div>
-                </div>
-            </div>
+  <!-- ==================== HABILIDADES ==================== -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2 class="section-titulo">
+        <span class="section-num">02.</span> Habilidades técnicas
+        <span class="section-line"></span>
+      </h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><span class="skill-icon">&lt;/&gt;</span> Frontend</h3>
+          <div class="skill-list">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
         </div>
-    </section>
 
-    <section id="proyectos">
-        <div class="container">
-            <h2 class="section-titulo">Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Sistema Bancario</h3>
-                        <p class="project-description">
-                            Aplicación web que simula un sistema bancario con funcionalidades de transacciones 
-                            entre cuentas y generación aleatoria de saldos. Incluye interfaz de usuario 
-                            intuitiva y lógica de negocio robusta.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Red Social de Música</h3>
-                        <p class="project-description">
-                            Plataforma social enfocada en música donde los usuarios pueden crear perfiles, 
-                            compartir sus gustos musicales y conectar con otros melómanos. 
-                            Proyecto académico con funcionalidades básicas implementadas.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Proyectos de Bases de Datos</h3>
-                        <p class="project-description">
-                          Aplicación en Java conectada a MySQL que permite registrar y mostrar información desde la terminal. Proyecto académico orientado a practicar la conexión con bases de datos, el uso de JDBC y la lógica básica de gestión de datos.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <div class="tech-tags">
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">MySQL</span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3><span class="skill-icon">{ }</span> Backend</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+          </div>
         </div>
-    </section>
 
-    <section id="contacto">
-        <div class="container">
-            <h2 class="section-titulo">Contacto</h2>
-            <div class="contact-content">
-                <p class="contact-text">
-                    Estoy disponible para oportunidades de trabajo como desarrollador backend junior.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:jesusolarte121206@gmail.com" class="contact-link">
-                        📧 Email
-                    </a>
-                    <a href="https://github.com/jesusolarte12" class="contact-link" target="_blank">
-                        🐙 GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/jes%C3%BAs-david-olarte-landinez-b70271347/" class="contact-link" target="_blank">
-                        💼 LinkedIn
-                    </a>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3><span class="skill-icon">⛁</span> Bases de datos</h3>
+          <div class="skill-list">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Jesús David Olarte Landinez. Desarrollador Backend Junior en crecimiento.</p>
-            </div>
+        <div class="skill-category">
+          <h3><span class="skill-icon">⚙</span> Herramientas</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCIA / PROYECTOS ==================== -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2 class="section-titulo">
+        <span class="section-num">03.</span> Experiencia y proyectos
+        <span class="section-line"></span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="repo-icon">⎇</span>
+              <span class="project-org">campuslands /</span>
+              <span class="project-name">campuslands-aliados</span>
+              <span class="badge badge-prod">● En producción</span>
+            </div>
+            <h3 class="project-title">Campuslands Aliados</h3>
+            <p class="project-description">
+              Plataforma web y móvil para gestión de referidos entre aliados, comerciales y
+              administradores. Cada rol cuenta con su propio panel: registro de referidos,
+              trazabilidad de contacto, dashboard de métricas y CRUD completo.
+            </p>
+            <p class="project-description">
+              Incluye asignación automática de comerciales, comisiones por gremio y
+              validación vía <strong>Google Sheets API</strong> para restringir contactos
+              menores a noventa días.
+            </p>
+          </div>
+          <div class="project-card-bottom">
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Google Sheets API</span>
+            </div>
+            <div class="project-stats">
+              <span><span class="stat-icon">★</span> Proyecto real</span>
+              <span><span class="stat-icon">⎘</span> CRUD + dashboards</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="repo-icon">⎇</span>
+              <span class="project-org">campuslands /</span>
+              <span class="project-name">logitrack</span>
+              <span class="badge badge-academic">● Académico</span>
+            </div>
+            <h3 class="project-title">LogiTrack</h3>
+            <p class="project-description">
+              Sistema de gestión de bodegas empresariales con <strong>arquitectura de tres
+              capas</strong>. Backend robusto con Java y Spring Boot, base de datos
+              relacional con MySQL y frontend en HTML/CSS/JS.
+            </p>
+          </div>
+          <div class="project-card-bottom">
+            <div class="tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-stats">
+              <span><span class="stat-icon">⎘</span> Arquitectura 3 capas</span>
+              <span><span class="stat-icon">⛁</span> BD relacional</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCACION ==================== -->
+  <section id="educacion" class="section">
+    <div class="container">
+      <h2 class="section-titulo">
+        <span class="section-num">04.</span> Educación
+        <span class="section-line"></span>
+      </h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ene 2025 — Nov 2025</span>
+            <h3>Técnico Laboral en Desarrollo de Software</h3>
+            <p class="timeline-org">Campuslands · Floridablanca</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Promoción 2024</span>
+            <h3>Bachiller</h3>
+            <p class="timeline-org">Institución Educativa Medalla Milagrosa</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ene 2023 — Abr 2024</span>
+            <h3>Técnico en Sistemas</h3>
+            <p class="timeline-org">Institución Educativa Medalla Milagrosa</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO ==================== -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-titulo">
+        <span class="section-num">05.</span> Contacto
+        <span class="section-line"></span>
+      </h2>
+
+      <div class="contact-content">
+        <div class="code-block contact-code">
+          <div class="code-header">
+            <span class="file-icon">{}</span>
+            <span class="file-name">contact.sh</span>
+          </div>
+          <pre class="code-body"><code><span class="c-comment"># ¿Buscas un dev fullstack junior listo para sumar?</span>
+<span class="c-comment"># Hablemos.</span>
+<span class="c-key">$</span> <span class="c-str">curl</span> -X POST jesusolarte121206@gmail.com</code></pre>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:jesusolarte121206@gmail.com" class="contact-link">
+            <span class="contact-icon">@</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">jesusolarte121206@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/jesusolarte12" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon">⎇</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">@jesusolarte12</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jes%C3%BAs-david-olarte-landinez-b70271347/" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon">in</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Jesús David Olarte</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container footer-content">
+      <p><span class="footer-prompt">$</span> echo "Construido con ♥ y mucho café"</p>
+      <p class="footer-copy">&copy; 2026 Jesús David Olarte Landinez · Fullstack Junior</p>
+    </div>
+  </footer>
+
+  <script>
+    // Typing effect en la última línea del terminal
+    const phrases = [
+      'npm run build',
+      'git push origin main',
+      'docker compose up',
+      './deploy.sh production',
+      'echo "Listo para sumar al equipo"'
+    ];
+    const typed = document.querySelector('.typed');
+    let p = 0, i = 0, deleting = false;
+
+    function tick() {
+      if (!typed) return;
+      const current = phrases[p];
+      typed.textContent = deleting
+        ? current.substring(0, i--)
+        : current.substring(0, i++);
+
+      let delay = deleting ? 40 : 80;
+      if (!deleting && i === current.length + 1) {
+        delay = 1600; deleting = true; i = current.length;
+      } else if (deleting && i === -1) {
+        deleting = false; i = 0; p = (p + 1) % phrases.length; delay = 400;
+      }
+      setTimeout(tick, delay);
+    }
+    tick();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
